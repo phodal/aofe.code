@@ -14,3 +14,5 @@ gulp.task('sass', function(done) {
     .pipe(gulp.dest('./dist/css/'))
     .on('end', done);
 });
+
+gulp.task('default', ['sass']);
