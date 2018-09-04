@@ -1,6 +1,6 @@
 module.exports = function (grunt) {
   grunt.initConfig({
-    sass: {
+    sass: { // 编译 SASS 任务
       dist: {
         options: {
           style: 'expanded'
@@ -10,7 +10,7 @@ module.exports = function (grunt) {
         }
       }
     },
-    cssmin: { // minifying css task
+    cssmin: {  // 压缩 CSS 任务
       dist: {
         files: {
           'dist/css/styles.min.css': 'dist/css/styles.css'
