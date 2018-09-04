@@ -5,24 +5,15 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
+
           {
             loader: 'file-loader',
-            options: {
-              name: '[name].css',
-            }
+            options: {name: '[name].css',}
           },
-          {
-            loader: "extract-loader"
-          },
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'postcss-loader'
-          },
-          {
-            loader: 'sass-loader'
-          }
+          {loader: "extract-loader"},
+          {loader: 'css-loader'},
+          {loader: 'postcss-loader'},
+          {loader: 'sass-loader'}
         ],
       }
     ]
