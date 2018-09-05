@@ -1,0 +1,28 @@
+pipeline {
+  agent any
+
+  triggers {
+    pollSCM('* * * * *')
+  }
+
+  stages {
+    stage('Setup') {
+      steps {
+        sh 'npm install'
+      }
+    }
+
+
+   stage('Build') {
+      steps {
+        sh 'npm build'
+      }
+    }
+
+    stage('Test') {
+      steps {
+        sh 'npm test'
+      }
+    }
+  }
+}
