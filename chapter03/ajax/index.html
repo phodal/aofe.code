@@ -8,11 +8,32 @@
 </head>
 <body>
 <script>
-$.ajax({
-  url: "/api/article/comments/html", success: function (content) {
-    $("#comments").html(content);
+  $.ajax({
+    url: "/api/article/comments/html", success: function (content) {
+      $("#comments").html(content);
+    }
+  });
+</script>
+<script>
+var that = this;
+fetch("/api/article/comments").then(function (res) {
+  if (res.ok) {
+    res.json().then(function (data) {
+      that.contents = data.contents;
+    });
+  } else {
+    console.log("Looks like the response wasn't perfect, got status", res.status);
   }
+}, function (e) {
+  console.log("Fetch failed!", e);
 });
+</script>
+<script>
+this.http.get<CommentsModel>('/api/article/comments')
+  .subscribe(
+    data => this.contents = data,
+    err => console.log(err)
+  );
 </script>
 </body>
 </html>
