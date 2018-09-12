@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="assets/tmpl.js"></script>
+</head>
+<body>
+
+<div id="result"></div>
+
+<script type="text/x-tmpl" id="tmpl-demo">
+<h3>{%=o.title%}</h3>
+<p>Released under the
+<a href="{%=o.license.url%}">{%=o.license.name%}</a>.</p>
+<h4>Features</h4>
+<ul>
+{% for (var i=0; i<o.features.length; i++) { %}
+    <li>{%=o.features[i]%}</li>
+{% } %}
+</ul>
+</script>
+
+
+<script>
+var data = {
+    "title": "JavaScript Templates",
+    "license": {
+        "name": "MIT license",
+        "url": "https://opensource.org/licenses/MIT"
+    },
+    "features": [
+        "lightweight & fast",
+        "powerful",
+        "zero dependencies"
+    ]
+};
+document.getElementById("result").innerHTML = tmpl("tmpl-demo", data);
+</script>
+</body>
+</html>
