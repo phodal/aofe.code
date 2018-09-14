@@ -1,4 +1,7 @@
-// 基于 https://github.com/trix/nano
+/*
+ * Copyright 2014 Tomasz Mazur, Jacek Becela
+ * https://github.com/trix/nano
+ */
 
 function simple(template, data) {
   return template.replace(/\{\{([\w\.]*)\}\}/g, function (str, key) {
