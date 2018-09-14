@@ -8,8 +8,9 @@
   <script src="assets/tmpl.js"></script>
   <script src="assets/simple.js"></script>
   <script>
-    var data = {user: {name: 'phodal'}};
-    nano("<p>Hello {{user.name}} </p>", data)
+    var data = {user: {name: 'phodal'}, info: {address: {city: 'faf'}}};
+    var temp = nano("<p>Hello {{user.name}}, {{info.address.city}} </p>", data);
+    console.log(temp);
   </script>
 </head>
 <body>
@@ -26,6 +27,7 @@
     <li>{%=o.features[i]%}</li>
 {% } %}
 </ul>
+
 </script>
 
 
