@@ -1,11 +1,16 @@
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="assets/tmpl.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="assets/tmpl.js"></script>
+  <script src="assets/simple.js"></script>
+  <script>
+    var data = {user: {name: 'phodal'}};
+    nano("<p>Hello {{user.name}} </p>", data)
+  </script>
 </head>
 <body>
 
@@ -25,19 +30,19 @@
 
 
 <script>
-var data = {
+  var data = {
     "title": "JavaScript Templates",
     "license": {
-        "name": "MIT license",
-        "url": "https://opensource.org/licenses/MIT"
+      "name": "MIT license",
+      "url": "https://opensource.org/licenses/MIT"
     },
     "features": [
-        "lightweight & fast",
-        "powerful",
-        "zero dependencies"
+      "lightweight & fast",
+      "powerful",
+      "zero dependencies"
     ]
-};
-document.getElementById("result").innerHTML = tmpl("tmpl-demo", data);
+  };
+  document.getElementById("result").innerHTML = tmpl("tmpl-demo", data);
 </script>
 </body>
 </html>
