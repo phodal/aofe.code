@@ -1,6 +1,6 @@
 // 基于 https://github.com/trix/nano
 
-function nano(template, data) {
+function simple(template, data) {
   return template.replace(/\{\{([\w\.]*)\}\}/g, function (str, key) {
     var keys = key.split(".");
     var value = data[keys.shift()];
