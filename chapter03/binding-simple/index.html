@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Two Way Data Binding</title>
+</head>
+<body>
+<section>
+  Name: <input data-tw-bind="name" type="text">
+  <span data-tw-bind="name"></span>
+  <hr/>
+  Surname: <input data-tw-bind="surname" type="text">
+  <span data-tw-bind="surname"></span>
+  <hr/>
+  <button onclick="log()">See Scope Values</button>
+  <hr/>
+  <button onclick="changeNameByCode()">Change Name By Code</button>
+  <hr/>
+  <button onclick="changeSurnameByCode()">Change Surname By Code</button>
+  <hr/>
+</section>
+<script src="app.js"></script>
+</body>
+</html>
