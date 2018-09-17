@@ -8,3 +8,10 @@
 ---
 
 轻量级客户端库：[Page.js](https://github.com/visionmedia/page.js)
+
+相关文章
+---
+
+[Deep dive into client-side routing](http://krasimirtsonev.com/blog/article/deep-dive-into-client-side-routing-navigo-pushstate-hash)
+
+[A modern JavaScript router in 100 lines](http://krasimirtsonev.com/blog/article/A-modern-JavaScript-router-in-100-lines-history-api-pushState-hash-url)
