@@ -1,0 +1,19 @@
+{
+  "name": "js-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:vdom": "browserify vdom-sample.js -o bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "virtual-dom": "^2.1.1"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.2"
+  }
+}
