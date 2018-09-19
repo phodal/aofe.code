@@ -1,0 +1,21 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<button id="interact-bar">click</button>
+<script>
+  var button = document.querySelector('#interact-bar');
+  button.addEventListener('click', function (event) {
+    console.log(event);
+  });
+
+  button.innerText = "click button";
+</script>
+</body>
+</html>
