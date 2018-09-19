@@ -5,7 +5,7 @@ var createElement = require('virtual-dom/create-element');
 
 // 1: 创建一个函数来声明 DOM 对应的属性
 function render(count)  {
-  return h('a', {href: 'https://npm.im/hyperscript'}, count);
+  return h('a', {href: 'https://aofe.phodal.com/'}, count);
 }
 
 // 2: 初始化 document
