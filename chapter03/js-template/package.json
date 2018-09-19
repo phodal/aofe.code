@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "hyperscript": "^2.0.2",
     "virtual-dom": "^2.1.1"
   },
   "devDependencies": {
