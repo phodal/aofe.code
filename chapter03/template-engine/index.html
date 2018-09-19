@@ -7,16 +7,18 @@
   <title>Document</title>
   <script src="assets/tmpl.js"></script>
   <script src="assets/simple.js"></script>
-  <script>
-    var data = {user: {name: 'Phodal'}, info: {address: {city: '漳州'}}};
-    var temp = simple("<p>用户：{{user.name}}, 地址：{{info.address.city}} </p>", data);
-    console.log(temp);
-  </script>
 </head>
 <body>
 
+<div id="result2"></div>
 <div id="result"></div>
 
+
+<script>
+  var data = {user: {name: 'Phodal'}, info: {address: {city: '漳州'}}};
+  var temp = simple("<p>用户：{{user.name}}, 地址：{{info.address.city}} </p>", data);
+  document.getElementById("result2").innerHTML = temp;
+</script>
 <script type="text/x-tmpl" id="tmpl-demo">
 <h3>{%=o.title%}</h3>
 <p>Released under the
