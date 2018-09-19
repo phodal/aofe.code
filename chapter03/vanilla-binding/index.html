@@ -8,14 +8,21 @@
 </head>
 <body>
 
-<button id="interact-bar">click</button>
+<label for="inputText"></label>
+<input id="inputText" type="text"/>
+
+<button id="change-button">change value</button>
 <script>
-  var button = document.querySelector('#interact-bar');
+  var inputText = document.querySelector('#inputText');
+  inputText.addEventListener("input", function(event){
+    console.log(event.target.value);
+  })
+
+  var button = document.querySelector('#change-button');
   button.addEventListener('click', function (event) {
-    console.log(event);
+    inputText.value = 'change';
   });
 
-  button.innerText = "click button";
 </script>
 </body>
 </html>
