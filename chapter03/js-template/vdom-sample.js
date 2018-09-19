@@ -3,7 +3,7 @@ var diff = require('virtual-dom/diff');
 var patch = require('virtual-dom/patch');
 var createElement = require('virtual-dom/create-element');
 
-// 1: Create a function that declares what the DOM should look like
+// 1: 创建一个函数来声明 DOM 对应的属性
 function render(count)  {
   return h('div', {
     style: {
@@ -16,14 +16,14 @@ function render(count)  {
   }, [String(count)]);
 }
 
-// 2: Initialise the document
-var count = 0;      // We need some app data. Here we just store a count.
+// 2: 初始化 document
+var count = 0;      // 创建应用 data，比如用于存储的 count
 
-var tree = render(count);               // We need an initial tree
-var rootNode = createElement(tree);     // Create an initial root DOM node ...
-document.body.appendChild(rootNode);    // ... and it should be in the document
+var tree = render(count);               // 初始化树
+var rootNode = createElement(tree);     // 创建一个初始化的 DOM 节点
+document.body.appendChild(rootNode);    // 将 DOM 节点添加到 document
 
-// 3: Wire up the update logic
+// 3: 整合起来来更新逻辑
 setInterval(function () {
   count++;
 
