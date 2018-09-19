@@ -5,15 +5,7 @@ var createElement = require('virtual-dom/create-element');
 
 // 1: 创建一个函数来声明 DOM 对应的属性
 function render(count)  {
-  return h('div', {
-    style: {
-      textAlign: 'center',
-      lineHeight: (100 + count) + 'px',
-      border: '1px solid red',
-      width: (100 + count) + 'px',
-      height: (100 + count) + 'px'
-    }
-  }, [String(count)]);
+  return h('a', {href: 'https://npm.im/hyperscript'}, count);
 }
 
 // 2: 初始化 document
