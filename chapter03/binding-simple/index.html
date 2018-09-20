@@ -6,17 +6,11 @@
 </head>
 <body>
 <section>
-  Name: <input data-tw-bind="name" type="text">
+  <label for="inputText">Name:</label>
+  <input id="inputText" data-tw-bind="name" type="text">
   <span data-tw-bind="name"></span>
   <hr/>
-  Surname: <input data-tw-bind="surname" type="text">
-  <span data-tw-bind="surname"></span>
-  <hr/>
-  <button onclick="log()">See Scope Values</button>
-  <hr/>
-  <button onclick="changeNameByCode()">Change Name By Code</button>
-  <hr/>
-  <button onclick="changeSurnameByCode()">Change Surname By Code</button>
+  <button onclick="changeNameByCode()">Data to View</button>
   <hr/>
 </section>
 <script src="app.js"></script>
