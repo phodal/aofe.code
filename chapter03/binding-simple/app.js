@@ -1,3 +1,4 @@
+// 代码基于： https://github.com/SantiagoGdaR/js-two-way-binding
 (function () {
   var elements = document.querySelectorAll('[data-tw-bind]');
   var scope = {};
