@@ -1,6 +1,7 @@
 (function () {
   var elements = document.querySelectorAll('[data-tw-bind]');
   var scope = {};
+  var count = 0;
 
   elements.forEach(function (element) {
     if (element.type === 'text') {
@@ -38,5 +39,10 @@
 
   changeNameByCode = function () {
     scope.name = 'Phodal HUNAG';
+
+    setTimeout(function () {
+      scope.name = 'hello, world'
+    }, 1000);
+
   };
 })();
