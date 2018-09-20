@@ -10,17 +10,21 @@
 
 <label for="inputText"></label>
 <input id="inputText" type="text"/>
+<span id="value"></span>
 
 <button id="change-button">change value</button>
 <script>
+  var inputData = '';
   var inputText = document.querySelector('#inputText');
   inputText.addEventListener('input', function(event){
-    console.log(event.target.value);
-  })
+    inputData = event.target.value;
+    document.querySelector('#value').innerText = inputData;
+  });
 
   var button = document.querySelector('#change-button');
   button.addEventListener('click', function (event) {
     inputText.value = 'change';
+    inputData = 'change';
   });
 
 </script>
