@@ -1,5 +1,4 @@
-// 代码基于： https://github.com/SantiagoGdaR/js-two-way-binding
-(function () {
+function bind() {
   var elements = document.querySelectorAll('[data-tw-bind]');
   var scope = {};
 
@@ -36,13 +35,4 @@
       }
     }
   });
-
-  changeNameByCode = function () {
-    scope.name = 'Phodal HUNAG';
-
-    setTimeout(function () {
-      scope.name = 'hello, world'
-    }, 1000);
-
-  };
-})();
+}
