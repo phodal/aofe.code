@@ -21,10 +21,3 @@ Router.prototype.navigate = function (path) {
 
 window.Router = new Router();
 window.Router.load();
-
-Router.add('/', function () {
-  console.log('/');
-});
-Router.add('/blue', function () {
-  console.log('/blue');
-});

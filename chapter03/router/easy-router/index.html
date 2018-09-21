@@ -7,7 +7,20 @@
   <title>Document</title>
 </head>
 <body>
+<div id="demo"></div>
 
 <script src="easy-router.js"></script>
+<script>
+  Router.add('', function () {
+    document.getElementById('demo').innerHTML = "Router Home";
+  });
+  Router.add('/', function () {
+    document.getElementById('demo').innerHTML = "Router Home";
+  });
+  Router.add('/blue', function () {
+    document.getElementById('demo').innerHTML = "Router Blue";
+  });
+</script>
+
 </body>
 </html>
