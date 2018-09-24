@@ -8,6 +8,8 @@
 </head>
 <body>
 <div id="demo"></div>
+<button id="blue">Router Blue</button>
+<button id="home">Router Home</button>
 
 <script src="easy-router.js"></script>
 <script>
@@ -21,6 +23,13 @@
     document.getElementById('demo').innerHTML = "Router Blue";
   });
 </script>
-
+<script>
+document.getElementById("blue").addEventListener("click", function (ev) {
+  Router.navigate("/blue")
+});
+document.getElementById("home").addEventListener("click", function (ev) {
+  Router.navigate("/")
+});
+</script>
 </body>
 </html>
