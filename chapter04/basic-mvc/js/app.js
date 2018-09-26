@@ -1,5 +1,5 @@
 function Model() {
-  this.heading = "hello";
+  this.text = "hello";
 }
 
 function Controller(model) {
@@ -15,20 +15,20 @@ function Controller(model) {
         console.log(e.target);
     }
   };
-  this.getModelHeading = function () {
-    return that.model.heading;
+  this.getModelByKey = function (modelKey) {
+    return that.model[modelKey];
   };
   this.clickHandler = function (target) {
-    that.model.heading = 'world';
-    target.innerText = that.getModelHeading();
+    that.model.text = 'world';
+    target.innerText = that.getModelByKey("text");
   }
 }
 
 function View(controller) {
   this.controller = controller;
-  this.heading = document.getElementById('heading');
-  this.heading.innerText = controller.getModelHeading();
-  this.heading.addEventListener('click', controller);
+  this.demoButton = document.getElementById('demo-button');
+  this.demoButton.innerText = controller.getModelByKey("text");
+  this.demoButton.addEventListener('click', controller);
 }
 
 function main() {
