@@ -1,11 +1,10 @@
 function Model() {
-  this.heading = "Hello";
+  this.heading = "hello";
 }
 
 function Controller(model) {
   var self = this;
   this.model = model;
-  // EVENTLISTENER INTERFACE
   this.handleEvent = function (e) {
     e.stopPropagation();
     switch (e.type) {
@@ -16,13 +15,11 @@ function Controller(model) {
         console.log(e.target);
     }
   };
-  // GET MODEL HEADING
   this.getModelHeading = function () {
     return self.model.heading;
   };
-  // CHANGE THE MODEL
   this.clickHandler = function (target) {
-    self.model.heading = 'World';
+    self.model.heading = 'world';
     target.innerText = self.getModelHeading();
   }
 }
@@ -34,7 +31,7 @@ function View(controller) {
   this.heading.addEventListener('click', controller);
 }
 
-function main(){
+function main() {
   var model = new Model();
   var controller = new Controller(model);
   var view = new View(controller);
