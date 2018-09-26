@@ -3,24 +3,24 @@ function Model() {
 }
 
 function Controller(model) {
-  var self = this;
+  var that = this;
   this.model = model;
   this.handleEvent = function (e) {
     e.stopPropagation();
     switch (e.type) {
       case "click":
-        self.clickHandler(e.target);
+        that.clickHandler(e.target);
         break;
       default:
         console.log(e.target);
     }
   };
   this.getModelHeading = function () {
-    return self.model.heading;
+    return that.model.heading;
   };
   this.clickHandler = function (target) {
-    self.model.heading = 'world';
-    target.innerText = self.getModelHeading();
+    that.model.heading = 'world';
+    target.innerText = that.getModelHeading();
   }
 }
 
