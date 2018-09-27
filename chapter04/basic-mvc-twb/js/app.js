@@ -41,7 +41,6 @@ function Controller(model) {
   };
   this.clickHandler = function (target) {
     that.model.text = 'world';
-    that.model.notify();
   }
 }
 
