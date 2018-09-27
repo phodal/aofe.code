@@ -50,7 +50,7 @@ function View(controller) {
   this.controller = controller;
   var elements = document.querySelectorAll('[data-tw-bind]');
   elements.forEach(function (element) {
-    if (element.type === 'submit') {
+    if (element.type === 'button') {
       element.innerText = controller.getModelByKey("text");
       that.call = function (data) {
         element.innerText = data.text;
