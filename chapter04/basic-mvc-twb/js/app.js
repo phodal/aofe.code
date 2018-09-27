@@ -42,6 +42,10 @@ function Controller(model) {
   this.clickHandler = function (target) {
     that.model.text = 'world';
   }
+
+  setTimeout(function(){
+    that.model.text = "3s"
+  }, 3000)
 }
 
 function View(controller) {
@@ -58,10 +62,6 @@ function View(controller) {
     }
   });
   this.controller.model.subscribe(this);
-
-  setTimeout(function(){
-    that.controller.model.text = "3s"
-  }, 3000)
 }
 
 function main() {
