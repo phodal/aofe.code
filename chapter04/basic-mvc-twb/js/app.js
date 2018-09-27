@@ -48,16 +48,20 @@ function Controller(model) {
 function View(controller) {
   var that = this;
   this.controller = controller;
-  this.demoButton = document.getElementById('demo-button');
-  this.demoButton.innerText = controller.getModelByKey("text");
-  this.demoButton.addEventListener('click', controller);
-  this.call = function (data) {
-    this.demoButton.innerText = data.text;
-  };
+  var elements = document.querySelectorAll('[data-tw-bind]');
+  elements.forEach(function (element) {
+    if (element.type === 'submit') {
+      element.innerText = controller.getModelByKey("text");
+      that.call = function (data) {
+        element.innerText = data.text;
+      };
+      element.addEventListener('click', controller);
+    }
+  });
   this.controller.model.subscribe(this);
 
   setTimeout(function(){
-    that.controller.model.text = "1s"
+    that.controller.model.text = "3s"
   }, 3000)
 }
 
