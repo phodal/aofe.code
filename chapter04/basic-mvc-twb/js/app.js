@@ -13,7 +13,6 @@ function Model() {
     }
   });
 }
-
 Model.prototype.subscribe = function (listener) {
   this.listeners.push(listener)
 };
@@ -47,6 +46,7 @@ function Controller(model) {
 }
 
 function View(controller) {
+  var that = this;
   this.controller = controller;
   this.demoButton = document.getElementById('demo-button');
   this.demoButton.innerText = controller.getModelByKey("text");
@@ -55,6 +55,10 @@ function View(controller) {
     this.demoButton.innerText = data.text;
   };
   this.controller.model.subscribe(this);
+
+  setTimeout(function(){
+    that.controller.model.text = "1s"
+  }, 3000)
 }
 
 function main() {
