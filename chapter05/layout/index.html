@@ -1,0 +1,469 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      width: 100%；
+    }
+    .container {
+      margin: 0 auto;
+      max-width: 112.0rem;
+      padding: 0 2.0rem;
+      position: relative;
+      width: 100%;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      width: 100%;
+    }
+
+    .row.row-no-padding {
+      padding: 0;
+    }
+
+    .row.row-no-padding > .column {
+      padding: 0;
+    }
+
+    .row.row-wrap {
+      flex-wrap: wrap;
+    }
+
+    .row.row-top {
+      align-items: flex-start;
+    }
+
+    .row.row-bottom {
+      align-items: flex-end;
+    }
+
+    .row.row-center {
+      align-items: center;
+    }
+
+    .row.row-stretch {
+      align-items: stretch;
+    }
+
+    .row.row-baseline {
+      align-items: baseline;
+    }
+
+    .row .column {
+      display: block;
+      flex: 1 1 auto;
+      margin-left: 0;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .row .column.column-offset-10 {
+      margin-left: 10%;
+    }
+
+    .row .column.column-offset-20 {
+      margin-left: 20%;
+    }
+
+    .row .column.column-offset-25 {
+      margin-left: 25%;
+    }
+
+    .row .column.column-offset-33, .row .column.column-offset-34 {
+      margin-left: 33.3333%;
+    }
+
+    .row .column.column-offset-50 {
+      margin-left: 50%;
+    }
+
+    .row .column.column-offset-66, .row .column.column-offset-67 {
+      margin-left: 66.6666%;
+    }
+
+    .row .column.column-offset-75 {
+      margin-left: 75%;
+    }
+
+    .row .column.column-offset-80 {
+      margin-left: 80%;
+    }
+
+    .row .column.column-offset-90 {
+      margin-left: 90%;
+    }
+
+    .row .column.column-10 {
+      flex: 0 0 10%;
+      max-width: 10%;
+    }
+
+    .row .column.column-20 {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+
+    .row .column.column-25 {
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+
+    .row .column.column-33, .row .column.column-34 {
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+    }
+
+    .row .column.column-40 {
+      flex: 0 0 40%;
+      max-width: 40%;
+    }
+
+    .row .column.column-50 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+
+    .row .column.column-60 {
+      flex: 0 0 60%;
+      max-width: 60%;
+    }
+
+    .row .column.column-66, .row .column.column-67 {
+      flex: 0 0 66.6666%;
+      max-width: 66.6666%;
+    }
+
+    .row .column.column-75 {
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+
+    .row .column.column-80 {
+      flex: 0 0 80%;
+      max-width: 80%;
+    }
+
+    .row .column.column-90 {
+      flex: 0 0 90%;
+      max-width: 90%;
+    }
+
+    .row .column .column-top {
+      align-self: flex-start;
+    }
+
+    .row .column .column-bottom {
+      align-self: flex-end;
+    }
+
+    .row .column .column-center {
+      -ms-grid-row-align: center;
+      align-self: center;
+    }
+
+    @media (min-width: 40rem) {
+      .row {
+        flex-direction: row;
+        margin-left: -1.0rem;
+        width: calc(100% + 2.0rem);
+      }
+
+      .row .column {
+        margin-bottom: inherit;
+        padding: 0 1.0rem;
+      }
+    }
+
+    .wrapper {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      width: 100%
+    }
+
+    .wrapper .container {
+      max-width: 80rem
+    }
+
+    .wrapper > .container {
+      padding-bottom: 7.5rem;
+      padding-top: 7.5rem
+    }
+    .example {
+      margin-top: 4rem;
+      position: relative
+    }
+    .example .container {
+      padding-left: 0;
+      padding-right: 0
+    }
+    .example.row, .example .row {
+      margin-bottom: 0
+    }
+    .column-demo {
+      background: #d1d8df;
+      border-radius: .4rem;
+      display: block;
+      font-size: 1rem;
+      font-weight: 600;
+      height: 3rem;
+      letter-spacing: .1rem;
+      line-height: 3rem;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      text-transform: uppercase
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <section class="container" id="grids">
+    <h5 class="title">Grids</h5>
+    <hr>
+    <div class="example">
+      <div class="row">
+        <div class="column"><span class="column-demo">100%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-10"><span class="column-demo">10%</span></div>
+        <div class="column column-90"><span class="column-demo">90%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-20"><span class="column-demo">20%</span></div>
+        <div class="column column-80"><span class="column-demo">80%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-25"><span class="column-demo">25%</span></div>
+        <div class="column column-75"><span class="column-demo">75%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-33"><span class="column-demo">33%</span></div>
+        <div class="column column-67"><span class="column-demo">67%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-40"><span class="column-demo">40%</span></div>
+        <div class="column column-60"><span class="column-demo">60%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-50"><span class="column-demo">50%</span></div>
+        <div class="column column-50"><span class="column-demo">50%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-60"><span class="column-demo">60%</span></div>
+        <div class="column column-40"><span class="column-demo">40%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-67"><span class="column-demo">67%</span></div>
+        <div class="column column-33"><span class="column-demo">33%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-75"><span class="column-demo">75%</span></div>
+        <div class="column column-25"><span class="column-demo">25%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-80"><span class="column-demo">80%</span></div>
+        <div class="column column-20"><span class="column-demo">20%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-90"><span class="column-demo">90%</span></div>
+        <div class="column column-10"><span class="column-demo">10%</span></div>
+      </div>
+      <div class="row">
+        <div class="column"><span class="column-demo">100%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-90"><span class="column-demo">90%</span></div>
+        <div class="column"><span class="column-demo">10%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-80"><span class="column-demo">80%</span></div>
+        <div class="column"><span class="column-demo">20%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-75"><span class="column-demo">75%</span></div>
+        <div class="column"><span class="column-demo">25%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-67"><span class="column-demo">67%</span></div>
+        <div class="column"><span class="column-demo">33%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-60"><span class="column-demo">60%</span></div>
+        <div class="column"><span class="column-demo">40%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-50"><span class="column-demo">50%</span></div>
+        <div class="column"><span class="column-demo">50%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-40"><span class="column-demo">40%</span></div>
+        <div class="column"><span class="column-demo">60%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-33"><span class="column-demo">33%</span></div>
+        <div class="column"><span class="column-demo">67%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-25"><span class="column-demo">25%</span></div>
+        <div class="column"><span class="column-demo">75%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-20"><span class="column-demo">20%</span></div>
+        <div class="column"><span class="column-demo">80%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-10"><span class="column-demo">10%</span></div>
+        <div class="column"><span class="column-demo">90%</span></div>
+      </div>
+      <div class="row">
+        <div class="column"><span class="column-demo">100%</span></div>
+      </div>
+      <div class="row">
+        <div class="column"><span class="column-demo">50%</span></div>
+        <div class="column"><span class="column-demo">50%</span></div>
+      </div>
+      <div class="row">
+        <div class="column"><span class="column-demo">33.3%</span></div>
+        <div class="column"><span class="column-demo">33.3%</span></div>
+        <div class="column"><span class="column-demo">33.3%</span></div>
+      </div>
+      <div class="row">
+        <div class="column"><span class="column-demo">25%</span></div>
+        <div class="column"><span class="column-demo">25%</span></div>
+        <div class="column"><span class="column-demo">25%</span></div>
+        <div class="column"><span class="column-demo">25%</span></div>
+      </div>
+      <div class="row">
+        <div class="column"><span class="column-demo">20%</span></div>
+        <div class="column"><span class="column-demo">20%</span></div>
+        <div class="column"><span class="column-demo">20%</span></div>
+        <div class="column"><span class="column-demo">20%</span></div>
+        <div class="column"><span class="column-demo">20%</span></div>
+      </div>
+      <div class="row">
+        <div class="column"><span class="column-demo">16.6%</span></div>
+        <div class="column"><span class="column-demo">16.6%</span></div>
+        <div class="column"><span class="column-demo">16.6%</span></div>
+        <div class="column"><span class="column-demo">16.6%</span></div>
+        <div class="column"><span class="column-demo">16.6%</span></div>
+        <div class="column"><span class="column-demo">16.6%</span></div>
+      </div>
+      <div class="row">
+        <div class="column"><span class="column-demo">14.28%</span></div>
+        <div class="column"><span class="column-demo">14.28%</span></div>
+        <div class="column"><span class="column-demo">14.28%</span></div>
+        <div class="column"><span class="column-demo">14.28%</span></div>
+        <div class="column"><span class="column-demo">14.28%</span></div>
+        <div class="column"><span class="column-demo">14.28%</span></div>
+        <div class="column"><span class="column-demo">14.28%</span></div>
+      </div>
+      <div class="row">
+        <div class="column"><span class="column-demo">12.5%</span></div>
+        <div class="column"><span class="column-demo">12.5%</span></div>
+        <div class="column"><span class="column-demo">12.5%</span></div>
+        <div class="column"><span class="column-demo">12.5%</span></div>
+        <div class="column"><span class="column-demo">12.5%</span></div>
+        <div class="column"><span class="column-demo">12.5%</span></div>
+        <div class="column"><span class="column-demo">12.5%</span></div>
+        <div class="column"><span class="column-demo">12.5%</span></div>
+      </div>
+      <div class="row">
+        <div class="column"><span class="column-demo">11.11%</span></div>
+        <div class="column"><span class="column-demo">11.11%</span></div>
+        <div class="column"><span class="column-demo">11.11%</span></div>
+        <div class="column"><span class="column-demo">11.11%</span></div>
+        <div class="column"><span class="column-demo">11.11%</span></div>
+        <div class="column"><span class="column-demo">11.11%</span></div>
+        <div class="column"><span class="column-demo">11.11%</span></div>
+        <div class="column"><span class="column-demo">11.11%</span></div>
+        <div class="column"><span class="column-demo">11.11%</span></div>
+      </div>
+      <div class="row">
+        <div class="column"><span class="column-demo">10%</span></div>
+        <div class="column"><span class="column-demo">10%</span></div>
+        <div class="column"><span class="column-demo">10%</span></div>
+        <div class="column"><span class="column-demo">10%</span></div>
+        <div class="column"><span class="column-demo">10%</span></div>
+        <div class="column"><span class="column-demo">10%</span></div>
+        <div class="column"><span class="column-demo">10%</span></div>
+        <div class="column"><span class="column-demo">10%</span></div>
+        <div class="column"><span class="column-demo">10%</span></div>
+        <div class="column"><span class="column-demo">10%</span></div>
+      </div>
+      <div class="row">
+        <div class="column"><span class="column-demo">9.09%</span></div>
+        <div class="column"><span class="column-demo">9.09%</span></div>
+        <div class="column"><span class="column-demo">9.09%</span></div>
+        <div class="column"><span class="column-demo">9.09%</span></div>
+        <div class="column"><span class="column-demo">9.09%</span></div>
+        <div class="column"><span class="column-demo">9.09%</span></div>
+        <div class="column"><span class="column-demo">9.09%</span></div>
+        <div class="column"><span class="column-demo">9.09%</span></div>
+        <div class="column"><span class="column-demo">9.09%</span></div>
+        <div class="column"><span class="column-demo">9.09%</span></div>
+        <div class="column"><span class="column-demo">9.09%</span></div>
+      </div>
+      <div class="row">
+        <div class="column"><span class="column-demo">8.3%</span></div>
+        <div class="column"><span class="column-demo">8.3%</span></div>
+        <div class="column"><span class="column-demo">8.3%</span></div>
+        <div class="column"><span class="column-demo">8.3%</span></div>
+        <div class="column"><span class="column-demo">8.3%</span></div>
+        <div class="column"><span class="column-demo">8.3%</span></div>
+        <div class="column"><span class="column-demo">8.3%</span></div>
+        <div class="column"><span class="column-demo">8.3%</span></div>
+        <div class="column"><span class="column-demo">8.3%</span></div>
+        <div class="column"><span class="column-demo">8.3%</span></div>
+        <div class="column"><span class="column-demo">8.3%</span></div>
+        <div class="column"><span class="column-demo">8.3%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-50 column-offset-25"><span class="column-demo">50%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-50 column-offset-50"><span class="column-demo">50%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-25 column-offset-75"><span class="column-demo">25%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-25 column-offset-50"><span class="column-demo">25%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-25 column-offset-25"><span class="column-demo">25%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-25 column-offset-25"><span class="column-demo">25%</span></div>
+        <div class="column column-25 column-offset-25"><span class="column-demo">25%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-25"><span class="column-demo">25%</span></div>
+        <div class="column column-25 column-offset-50"><span class="column-demo">25%</span></div>
+      </div>
+      <div class="row">
+        <div class="column"><span class="column-demo">25%</span></div>
+        <div class="column column-50 column-offset-25"><span class="column-demo">50%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-50"><span class="column-demo">50%</span></div>
+        <div class="column column-25 column-offset-25"><span class="column-demo">25%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-25"><span class="column-demo">25%</span></div>
+        <div class="column column-25 column-offset-25"><span class="column-demo">25%</span></div>
+      </div>
+      <div class="row">
+        <div class="column column-75 column-offset-25"><span class="column-demo">75%</span></div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
