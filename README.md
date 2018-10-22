@@ -2,6 +2,7 @@
 
 ## 目录
 
+```
 ├── chapter02
 │   ├── angular-examples
 │   ├── docker-react
@@ -15,8 +16,9 @@
 │   ├── dom-template
 │   ├── router
 │   └── template-engine
-└── chapter04
-    └── mvc
+├── chapter04
+│   └── mvc
+```
 
 License
 ---
