@@ -42,4 +42,3 @@ swagger project start
 $ curl http://127.0.0.1:10010/hello?name=Phodal
 { "message": "Hello, Phodal!" }
 ```
-
