@@ -1,0 +1,6 @@
+[
+  {
+    "context": "/verify-token",
+    "include": "api/verify-token.json"
+  }
+]

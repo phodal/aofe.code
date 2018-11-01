@@ -1,0 +1,13 @@
+[
+  {
+    "request": {
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      }
+    },
+    "response": {
+      "token": "bar"
+    }
+  }
+]
