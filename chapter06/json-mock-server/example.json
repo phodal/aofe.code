@@ -1,0 +1,6 @@
+{
+  "projects": [
+    {"id": 1, "title": "aofe", "author": "phodal"},
+    {"id": 2, "title": "adr", "author": "phodal"}
+  ]
+}
