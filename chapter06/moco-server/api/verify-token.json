@@ -3,11 +3,11 @@
     "request": {
       "method": "post",
       "headers": {
-        "content-type": "application/json"
+        "Authorization": "Bear 32423424324"
       }
     },
     "response": {
-      "token": "bar"
+      "status": 200
     }
   }
 ]
