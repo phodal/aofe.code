@@ -1,13 +1,12 @@
-[
-  {
-    "request": {
-      "method": "post",
-      "headers": {
-        "Authorization": "Bear 32423424324"
-      }
-    },
-    "response": {
-      "status": 200
+[{
+  "request": {
+    "method": "post",
+    "uri": "/verify-token",
+    "headers": {
+      "authorization": "Bear 32423424324"
     }
+  },
+  "response": {
+    "status": 200
   }
-]
+}]
