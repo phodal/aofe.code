@@ -23,5 +23,5 @@ npm install -g json-server
 启动脚本：
 
 ```bash
-json-server --watch db.json
+json-server --watch example.json
 ```
