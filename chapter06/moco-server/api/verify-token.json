@@ -7,6 +7,7 @@
     }
   },
   "response": {
-    "status": 200
+    "status": 200,
+    "text": "{ \"success\": true}"
   }
 }]
