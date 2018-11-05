@@ -9,3 +9,5 @@
 [Contact Test Code](https://github.com/spring-guides/gs-contract-rest)
 
 [Pact](https://docs.pact.io/)
+
+[Dredd](https://github.com/apiaryio/dredd)
