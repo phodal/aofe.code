@@ -1,0 +1,11 @@
+{
+  "name": "graphql-demo",
+  "version": "0.0.1",
+  "description": "GraphQL BFF Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Phodal HUANG",
+  "license": "MIT"
+}
