@@ -3,9 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '' },
-  { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
-  { path: 'settings', loadChildren: './settings/settings.module#SettingsModule' },
-  { path: 'reports', loadChildren: './reports/reports.module#ReportsModule' }
+  { path: 'dashboard', loadChildren: '../dashboard/dashboard.module#DashboardModule' },
+  { path: 'settings', loadChildren: '../settings/settings.module#SettingsModule' },
+  { path: 'reports', loadChildren: '../reports/reports.module#ReportsModule' }
 ];
 
 @NgModule({
