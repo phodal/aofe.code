@@ -7,7 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "build:prod": "node script/buld.js && ng build --prod",
+    "build:prod": "node scripts/build.js && ng build --prod",
     "e2e": "ng e2e"
   },
   "private": true,
