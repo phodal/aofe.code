@@ -23,9 +23,12 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/@clr/ui/clr-ui-dark.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/systemjs/dist/system.js"
+            ]
           },
           "configurations": {
             "production": {
