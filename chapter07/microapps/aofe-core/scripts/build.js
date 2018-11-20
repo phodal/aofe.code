@@ -1,7 +1,7 @@
 let fs = require('fs-extra')
 let projects = ['reports', 'settings', 'dashboard'];
 
-for(let index in projects) {
+for (let index in projects) {
   let project = projects[index];
   let originModulePath = './src/app/' + project;
   fs.removeSync(originModulePath);
