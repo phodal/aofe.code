@@ -1,0 +1,35 @@
+<div>
+  <a [routerLink]="['/']">Home</a>
+  <p><span>my APP</span></p>
+  <p>
+    <a [routerLink]="['/app/help/home']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+      HELP APP
+    </a>
+  </p>
+  <p>
+    <a [routerLink]="['/app/app1/home']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">APP 1</a>
+  </p>
+  <p>
+    <a [routerLink]="['/app/app1/welcome']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">APP 1 Route 2</a>
+  </p>
+  <p>
+    <a [routerLink]="['/app/applicationone/']"
+       [routerLinkActive]="['active']"
+       [routerLinkActiveOptions]="{exact: true}">app-one</a>
+  </p>
+  <p>
+    <a [routerLink]="['/app/applicationtwo/']"
+       [routerLinkActive]="['active']"
+       [routerLinkActiveOptions]="{exact: true}">app-two</a>
+  </p>
+
+  <p>
+    <a [routerLink]="['/app/applicationthree/']"
+       [routerLinkActive]="['active']"
+       [routerLinkActiveOptions]="{exact: true}">app-three</a>
+  </p>
+
+</div>
+<div><a [routerLink]="['/reader']">READ ></a></div>
+<div><a [routerLink]="['/games']">GAME ></a></div>
+<div><a [routerLink]="['/shopping']">SHOP ></a></div>

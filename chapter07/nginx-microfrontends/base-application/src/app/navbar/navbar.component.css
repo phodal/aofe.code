@@ -1,0 +1,21 @@
+:host {
+  height: 100%;
+}
+
+a {
+  margin: 1em;
+}
+
+a.active {
+  color: #fff;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+span {
+  color: #fff;
+  padding-left: 1.5em;
+  font-size: 0.66em;
+}

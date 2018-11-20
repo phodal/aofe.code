@@ -1,0 +1,68 @@
+version: '2'
+
+services:
+  applicationone:
+    container_name: applicationone
+    build: ApplicationOne
+    networks:
+      - local-network
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+    ports:
+      - "8081:80"
+
+  applicationtwo:
+    container_name: applicationtwo
+    build: ApplicationTwo
+    networks:
+      - local-network
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+    ports:
+    - "8082:80"
+  
+  applicationthree:
+    container_name: applicationthree
+    build: ApplicationThree
+    networks:
+      - local-network
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+    ports:
+    - "8083:8080"
+
+  baseapplication:
+    container_name: baseapplication
+    build: base-application
+    networks:
+      - local-network
+    environment:
+      - NODE_ENV=production
+      - PORT=5000
+    ports:
+    - "8084:80"
+    depends_on:
+      - applicationone
+      - applicationtwo
+      - applicationthree
+
+
+#  micro-frontend-nginx-master:
+#    container_name: micro-frontend-nginx-master
+#    build: nginx
+#    volumes:
+#      - ./assets:/var/www
+#    ports:
+#      - "8888:80"
+#    networks:
+#      - local-network
+#    depends_on:
+#      - application-one
+#      - application-two
+#      - application-three
+
+networks:
+  local-network:

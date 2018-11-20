@@ -1,0 +1,75 @@
+[
+  {
+    "name": "app1",
+    "selector": "app-app1",
+    "baseScriptUrl": "/assets/app1",
+    "styles": [
+      "styles.bundle.css"
+    ],
+    "prefix": "app1",
+    "scripts": [
+      "inline.bundle.js",
+      "polyfills.bundle.js",
+      "main.bundle.js"
+    ]
+  },
+  {
+    "name": "help",
+    "selector": "app-help",
+    "baseScriptUrl": "/assets/help",
+    "styles": [
+      "styles.bundle.css"
+    ],
+    "prefix": "help",
+    "scripts": [
+      "inline.bundle.js",
+      "polyfills.bundle.js",
+      "main.bundle.js"
+    ]
+  },
+  {
+    "name": "applicationone",
+    "selector": "app-one",
+    "link": "http://localhost:8081",
+    "sourceType": "link",
+    "styles": [],
+    "prefix": "",
+    "scripts": [
+      "runtime.js",
+      "polyfills.js",
+      "styles.js",
+      "vendor.js",
+      "main.js"
+    ]
+  },
+  {
+    "name": "applicationtwo",
+    "selector": "app-two",
+    "link": "/applicationtwo",
+    "sourceType": "link",
+    "styles": [],
+    "prefix": "applicationtwo",
+    "scripts": [
+      "runtime.js",
+      "polyfills.js",
+      "styles.js",
+      "vendor.js",
+      "main.js"
+    ]
+  },
+  {
+    "name": "applicationthree",
+    "selector": "app-three",
+    "link": "http://localhost:8083/",
+    "sourceType": "link",
+    "styles": [],
+    "prefix": "applicationthree",
+    "scripts": [
+      "runtime.js",
+      "polyfills.js",
+      "styles.js",
+      "vendor.js",
+      "main.js"
+    ]
+  }
+]
