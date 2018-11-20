@@ -1,0 +1,1 @@
+export { WidgetTodaysDateModule } from './widget-todays-date/widget-todays-date.module';

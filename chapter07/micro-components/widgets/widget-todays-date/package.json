@@ -1,0 +1,21 @@
+{
+  "name": "widget-todays-date",
+  "version": "0.0.0",
+  "main": "dist/bundle.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && rollup -c"
+  },
+  "dependencies": {
+    "@angular/core": "^5.2.2",
+    "@angular/common": "^5.2.2",
+    "rollup": "^0.55.1"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-plugin-typescript2": "^0.10.0",
+    "typescript": "^2.6.2"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "widget-quotes",
+  "version": "0.0.0",
+  "main": "dist/bundle.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && rollup -c"
+  },
+  "dependencies": {
+    "@angular/common": "^5.2.0",
+    "@angular/core": "^5.2.0",
+    "rollup": "^0.55.1",
+    "rxjs": "^5.5.6"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-plugin-typescript2": "^0.10.0",
+    "rollup-plugin-commonjs": "8.3.0",
+    "typescript": "~2.5.3"
+  }
+}

@@ -1,0 +1,1 @@
+export { WidgetQuotesModule } from './widget-quotes/widget-quotes.module'
