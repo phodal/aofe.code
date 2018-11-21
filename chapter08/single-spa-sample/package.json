@@ -1,0 +1,50 @@
+{
+  "name": "simple-single-spa-webpack-example",
+  "version": "1.0.0",
+  "description": "A simple example of how to use webpack with single-spa",
+  "scripts": {
+    "watch": "webpack-dev-server --open",
+    "build": "webpack --config webpack.config.js -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeldenning/simple-single-spa-webpack-example.git"
+  },
+  "author": "Joel Denning",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joeldenning/simple-single-spa-webpack-example/issues"
+  },
+  "homepage": "https://github.com/joeldenning/simple-single-spa-webpack-example#readme",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.16",
+    "http-server": "^0.10.0",
+    "ts-loader": "^2.3.2",
+    "typescript": "^2.4.2",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.8.2"
+  },
+  "dependencies": {
+    "@angular/common": "^4.3.3",
+    "@angular/compiler": "^4.3.3",
+    "@angular/core": "^4.3.3",
+    "@angular/platform-browser": "^4.3.3",
+    "@angular/platform-browser-dynamic": "^4.3.3",
+    "@angular/router": "^4.3.6",
+    "core-js": "^2.4.1",
+    "es6-promise": "^4.1.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.4.2",
+    "single-spa": "^3.8.1",
+    "single-spa-angular2": "^1.2.0",
+    "single-spa-react": "^2.2.0",
+    "zone.js": "^0.8.16"
+  }
+}
