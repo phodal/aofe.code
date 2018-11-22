@@ -18,8 +18,7 @@ export class AppComponent {
       debug: true,
       parentElement: 'app-home',
       urlPrefix: 'app',
-      switchMode: 'coexist',
-      preload: true
+      switchMode: 'coexist'
     });
     http.get<IAppOption[]>('/assets/apps.json')
       .subscribe(
