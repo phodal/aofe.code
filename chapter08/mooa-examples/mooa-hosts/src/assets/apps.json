@@ -1,0 +1,16 @@
+[
+  {
+    "name": "app1",
+    "selector": "app-app1",
+    "baseScriptUrl": "/assets/app1",
+    "styles": [
+      "styles.3bb2a9d4949b7dc120a9.css"
+    ],
+    "prefix": "app/app1",
+    "scripts": [
+      "main.fbb4c7398448b0ebe06f.js",
+      "polyfills.908282e8e7f434e6eebf.js",
+      "runtime.ec2944dd8b20ec099bf3.js"
+    ]
+  }
+]
