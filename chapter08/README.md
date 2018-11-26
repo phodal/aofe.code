@@ -9,3 +9,6 @@
 ### DDD 与事件风暴
 
 [在微服务中使用领域事件](https://insights.thoughtworks.cn/use-domain-events-in-microservices/) 
+
+
+[基于 webpack 的持久化缓存方案](https://github.com/pigcan/blog/issues/9)
