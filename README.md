@@ -1,4 +1,4 @@
-# aofe.code
+# 《前端架构》代码
 
 ## 目录
 
@@ -13,11 +13,43 @@
 │   ├── ajax
 │   ├── binding
 │   ├── binding-simple
-│   ├── dom-template
+│   ├── framework
+│   ├── js-template
 │   ├── router
-│   └── template-engine
+│   ├── template-engine
+│   └── vanilla-binding
 ├── chapter04
-│   └── mvc
+│   ├── basic-mvc
+│   ├── basic-mvc-twb
+│   └── button-demo
+├── chapter05
+│   ├── designsystem
+│   ├── flex-layout
+│   ├── grid-layout
+│   ├── styleguide
+│   ├── vue-designsystem
+│   └── wc-angular-demo
+├── chapter06
+│   ├── contract-test
+│   ├── graphql-demo
+│   ├── jest-contract-test
+│   ├── json-mock-server
+│   ├── moco-server
+│   └── swagger-demo
+├── chapter07
+│   └── README.md
+└── chapter08
+    ├── lazyload-demo
+    ├── micro-components
+    ├── microapps
+    ├── mooa-examples
+    ├── nginx-microfrontends
+    ├── react-micro-components
+    ├── router-dispatch
+    ├── single-spa-sample
+    ├── stencil-demo
+    ├── vue-micro-components
+    └── wc-demo
 ```
 
 License
@@ -25,4 +57,4 @@ License
 
 [![Phodal's Article](http://brand.phodal.com/shields/article-small.svg)](https://www.phodal.com/) [![Phodal's Book](http://brand.phodal.com/shields/book-small.svg)](https://www.phodal.com/)
 
-© 2015~2018 A [Phodal Huang](https://www.phodal.com)'s [Book](http://github.com/phodal/books).  This code is distributed under the MIT license. See `LICENSE` in this directory.
+© 2018~2019 A [Phodal Huang](https://www.phodal.com)'s [Book](http://github.com/phodal/books).  This code is distributed under the MIT license. See `LICENSE` in this directory.
